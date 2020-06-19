@@ -10,6 +10,7 @@ namespace Task4_Delegate
     {
         static void Main(string[] args)
         {
+            Console.WriteLine( );
         }
     }
 }
