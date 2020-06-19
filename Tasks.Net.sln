@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1_Airoport", "Task1_Airoport\Task1_Airoport.csproj", "{D9434B05-42D5-4AE1-B8FB-F80BC06645ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3_Shape", "Task3_Shape\Task3_Shape.csproj", "{411F4FCE-34E9-46FB-9397-6C09BB31AB62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D9434B05-42D5-4AE1-B8FB-F80BC06645ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9434B05-42D5-4AE1-B8FB-F80BC06645ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9434B05-42D5-4AE1-B8FB-F80BC06645ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411F4FCE-34E9-46FB-9397-6C09BB31AB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411F4FCE-34E9-46FB-9397-6C09BB31AB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411F4FCE-34E9-46FB-9397-6C09BB31AB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411F4FCE-34E9-46FB-9397-6C09BB31AB62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
