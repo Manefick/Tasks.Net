@@ -10,6 +10,7 @@ namespace Task1_Airoport
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("test");
         }
     }
 }
