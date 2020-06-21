@@ -29,7 +29,7 @@ namespace Task2Cinema
     }
     public class Cinema : IEnumerable
     {
-        private List<Viewer> viewers = new List<Viewer>();//обобщенная колекция
+        private Viewer[,] viewers = new Viewer[5,6];
         Random random = new Random();
         enum Name
         {
@@ -54,29 +54,32 @@ namespace Task2Cinema
         }
         public Cinema()
         {
-            for (int i = 0; i < 30; i++)
+            for(int i =0; i<5;i++)
             {
-                int k = random.Next(0, 4);
-                if (k == 0)
-                    viewers.Add(null);
-                else
-                    viewers.Add(new Viewer(((Name)random.Next(0, 5)).ToString(), ((Surname)random.Next(0, 5)).ToString(), ((Sex)random.Next(0, 2)).ToString(), random.Next(15, 60)));
+                for(int j=0;j<6;j++)
+                {
+                    int k = random.Next(0, 4);
+                    if (k == 0)
+                        viewers[i, j] = null;
+                    else
+                        viewers[i, j] = new Viewer(((Name)random.Next(0, 5)).ToString(), ((Surname)random.Next(0, 5)).ToString(), ((Sex)random.Next(0, 2)).ToString(), random.Next(15, 60));
+                }
             }
         }
         public void sortVievers()// использование LINQ на обобщенной колекции
         {
-            var man = from p in viewers where p != null && p.Age > 45 select p;
+            var man = from p in viewers.Cast<Viewer>() where p != null && p.Age > 45 select p;
             foreach (var m in man)
             { Console.WriteLine($"{m.Name} {m.Surname} {m.Age}"); }
         }
         public void agregate()
         {
-            int avg = (int)(from a in viewers where a != null select a.Age).Average();
-            int count = (from a in viewers where a != null select a.Age).Count();
-            int countMan = (from a in viewers where a != null && a.Sex.Contains("Man") select a.Age).Count();
-            int countWoman = (from a in viewers where a != null && a.Sex == "Woman" select a.Age).Count();
-            int avgMan = (int)(from a in viewers where a != null && a.Sex == "Man" select a.Age).Average();
-            int avgWoman = (int)(from a in viewers where a != null && a.Sex == "Woman" select a.Age).Average();
+            int avg = (int)(from a in viewers.Cast<Viewer>() where a != null select a.Age).Average();
+            int count = (from a in viewers.Cast<Viewer>() where a != null select a.Age).Count();
+            int countMan = (from a in viewers.Cast<Viewer>() where a != null && a.Sex.Contains("Man") select a.Age).Count();
+            int countWoman = (from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Woman" select a.Age).Count();
+            int avgMan = (int)(from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Man" select a.Age).Average();
+            int avgWoman = (int)(from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Woman" select a.Age).Average();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Средний возраст зрителя = {avg}\nКоличество зрителей  = {count}\n" +
                 $"Количество мущин  = {countMan}\nКоличество женщин = {countWoman}\n" +
