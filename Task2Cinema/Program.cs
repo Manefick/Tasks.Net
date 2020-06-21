@@ -11,7 +11,10 @@ namespace Task2Cinema
         static void Main(string[] args)
         {
             Cinema cinema = new Cinema();
-            cinema.ShowViewers();
+            Console.WriteLine("If you want see list of viewers, please write 1 and press 'Enter'");
+            int choise = int.Parse(Console.ReadLine());//добавить проверку на то что пользователь ничего не введет
+            if(choise==1)
+                cinema.ShowViewers();
             cinema.agregate();
 
             Console.ReadLine();
