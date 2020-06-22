@@ -28,6 +28,19 @@ namespace Task5_Interfase
             return $"Id:{Id}, Name: {Name}, Price:{Price}";
         }
     }
+     class Entity : BaseEntity
+    {
+        internal string Description { get; set; }
+        public Entity() { }
+        public Entity(int id, string name, int price, string description) : base(id, name, price)
+        {
+            Description = description;
+        }
+        public override string ToString()
+        {
+            return $"Id:{Id}, Name: {Name}, Price:{Price}, Description: {Description}";
+        }
+    }
 
 
 }

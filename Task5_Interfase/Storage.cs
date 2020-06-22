@@ -27,6 +27,11 @@ namespace Task5_Interfase
             BaseEntity[] bases = baseEntities.ToArray();
             return bases;
         }
+        public void ShowAll()
+        {
+            foreach(var k in baseEntities)
+                Console.WriteLine(k);
+        }
     }
 
     public interface IEntityService<T>
