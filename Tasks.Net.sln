@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4_Delegate", "Task4_Del
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2Cinema", "Task2Cinema\Task2Cinema.csproj", "{8CA9204B-451E-494C-88A3-B904C80BD27D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5_Interfase", "Task5_Interfase\Task5_Interfase.csproj", "{3420A588-6219-4561-9187-2EE2321ACB9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8CA9204B-451E-494C-88A3-B904C80BD27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA9204B-451E-494C-88A3-B904C80BD27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA9204B-451E-494C-88A3-B904C80BD27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3420A588-6219-4561-9187-2EE2321ACB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3420A588-6219-4561-9187-2EE2321ACB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3420A588-6219-4561-9187-2EE2321ACB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3420A588-6219-4561-9187-2EE2321ACB9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
