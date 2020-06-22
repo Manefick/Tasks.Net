@@ -19,8 +19,9 @@ namespace Task5_Interfase
         }
         public BaseEntity Find(int id)
         {
-            return baseEntities.Find(delegate (BaseEntity entity)
-            { return entity.Id == id; });
+            return baseEntities.FirstOrDefault(x => x.Id == id);
+            //Find(delegate (BaseEntity entity)
+            //{ return entity.Id == id; });
         }
         public BaseEntity[] GetAll()
         {

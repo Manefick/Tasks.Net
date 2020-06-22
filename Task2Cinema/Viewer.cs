@@ -77,7 +77,7 @@ namespace Task2Cinema
             int avg = (int)(from a in viewers.Cast<Viewer>() where a != null select a.Age).Average();
             int count = (from a in viewers.Cast<Viewer>() where a != null select a.Age).Count();
             int countMan = (from a in viewers.Cast<Viewer>() where a != null && a.Sex.Contains("Man") select a.Age).Count();
-            int countWoman = (from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Woman" select a.Age).Count();
+            int countWoman = (from a in viewers.Cast<Viewer>() where a != null && a.Sex == Sex.Woman.ToString() select a.Age).Count();
             int avgMan = (int)(from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Man" select a.Age).Average();
             int avgWoman = (int)(from a in viewers.Cast<Viewer>() where a != null && a.Sex == "Woman" select a.Age).Average();
             Console.ForegroundColor = ConsoleColor.Red;
