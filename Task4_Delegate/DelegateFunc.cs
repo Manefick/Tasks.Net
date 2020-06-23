@@ -8,7 +8,7 @@ namespace Task4_Delegate
 {
     class DelegateFunc
     {
-        public static void SortArray(int [] array, Sort sort)
+        public void SortArray(int [] array, Sort sort)
         {
             int temp;
             for(int i = 0; i < array.Length-1; i++)
@@ -28,14 +28,14 @@ namespace Task4_Delegate
         }
         public delegate bool Sort(int x, int y);
 
-        public static bool Asc(int x, int y)
+        public bool Asc(int x, int y)
         {
             if (x > y)
                 return true;
             else
                 return false;
         }
-        public static bool Desc(int x, int y)
+        public bool Desc(int x, int y)
         {
             if (x < y)
                 return true;

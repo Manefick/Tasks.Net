@@ -18,13 +18,14 @@ namespace Task4_Delegate
             {
                 myArray[i] = n.Next(1, 100);
             }
+            DelegateFunc delegateFunc = new DelegateFunc();
 
             Console.WriteLine("Введите цифру 1 если хотите отсортировать масив по возростанию, цифру 2 -по убыванию");
             int choise = int.Parse(Console.ReadLine());
-            if(choise ==1)
-                DelegateFunc.SortArray(myArray, new DelegateFunc.Sort(DelegateFunc.Asc));
-            else if(choise==2)
-                DelegateFunc.SortArray(myArray, new DelegateFunc.Sort(DelegateFunc.Desc));
+            if (choise == 1)
+                delegateFunc.SortArray(myArray, new DelegateFunc.Sort(delegateFunc.Asc));
+            else if (choise == 2)
+                delegateFunc.SortArray(myArray, new DelegateFunc.Sort(delegateFunc.Desc));
             else
                 Console.WriteLine("Вы нажали не правильную цыфруб попробуйте еще раз");
 

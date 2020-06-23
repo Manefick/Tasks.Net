@@ -51,5 +51,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Task4_Delegate\Task4_Delegate.csproj">
+      <Project>{b3539be0-3dae-4b14-8457-20508dd7ce52}</Project>
+      <Name>Task4_Delegate</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

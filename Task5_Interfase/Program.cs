@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Task5_Interfase
 {
     class Program
@@ -31,6 +32,7 @@ namespace Task5_Interfase
                 Console.WriteLine(i);
 
             Console.ReadLine();
+
         }
     }
 }
