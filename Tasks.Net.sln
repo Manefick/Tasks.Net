@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2Cinema", "Task2Cinema\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5_Interfase", "Task5_Interfase\Task5_Interfase.csproj", "{3420A588-6219-4561-9187-2EE2321ACB9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6_CustomColection", "Task6_CustomColection\Task6_CustomColection.csproj", "{B2F7F278-2694-468E-B1C1-810291968522}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3420A588-6219-4561-9187-2EE2321ACB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3420A588-6219-4561-9187-2EE2321ACB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3420A588-6219-4561-9187-2EE2321ACB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F7F278-2694-468E-B1C1-810291968522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F7F278-2694-468E-B1C1-810291968522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F7F278-2694-468E-B1C1-810291968522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F7F278-2694-468E-B1C1-810291968522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
